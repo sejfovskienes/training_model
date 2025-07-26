@@ -38,3 +38,9 @@ Resulted with R² Score: -0.0316 and Mean Squared Error: 0.0174.
 ### Train7
 Used smaller version of the main dataset(from 2015 up to today). The training performs well up to some point but then predicts constant values. 
 Resulted with R² Score: -0.7118 and Mean Squared Error: 0.0590.
+
+
+### Train8 ()
+Same dataset from previous training applied on a script found on internet. The results are too good to be true. Needs inspecting. This script uses Random Forest Regressor. 
+update: data leakage was found: the train_test_split was made with shuffle=True parameter, because it is time series prediction it needs to be made with shuffle=False argument. 
+no progress.
