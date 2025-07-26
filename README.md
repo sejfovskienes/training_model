@@ -33,3 +33,8 @@ Resulted with R² Score: -0.0396 and Mean Squared Error: 0.0175.
 ### Train6.1 (inside train6.ipynb)
 Used ../dataset/dataset_v4.csv dataset. Added sin and cos transformation for the day and month. 
 Resulted with R² Score: -0.0316 and Mean Squared Error: 0.0174. 
+
+
+### Train7
+Used smaller version of the main dataset(from 2015 up to today). The training performs well up to some point but then predicts constant values. 
+Resulted with R² Score: -0.7118 and Mean Squared Error: 0.0590.
