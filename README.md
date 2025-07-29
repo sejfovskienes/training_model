@@ -40,7 +40,32 @@ Used smaller version of the main dataset(from 2015 up to today). The training pe
 Resulted with R² Score: -0.7118 and Mean Squared Error: 0.0590.
 
 
-### Train8 ()
+### Train8 
 Same dataset from previous training applied on a script found on internet. The results are too good to be true. Needs inspecting. This script uses Random Forest Regressor. 
 update: data leakage was found: the train_test_split was made with shuffle=True parameter, because it is time series prediction it needs to be made with shuffle=False argument. 
 no progress.
+
+
+### Train9
+Predicting gold prices using lstm and opimizing the architecture according to the error it gives.
+Resulted with RMSE: 15.48 MAE: 11.92 R² Score: 0.6245
+
+
+### Train10
+Predicting gold prices using Random Forest Regressor.
+Generally results with small positive R² Score.
+
+
+### Gold_Price_Prediction.ipynb
+Found this script on internet, it suprised me with the really good results but instead i found mistake in the train and test split. It was not time series prediction because of the shuffle parameter set on default by True and needed to be changed to False which resulted with bad results. 
+
+
+### Train11 
+Trying to divide the dataset into 98:2 train-test split ratio. performed with better results but not sure how it will perform in production. Tried to add lags to this model training method but instead performed worse. 
+
+
+### Train12
+Tried to combine both of lstm and random forest regression models to predict the target column. Showed to perform better then all previous methods. The work will continue in this direction to optimize the models, or balance the combining ratio between both of the models.
+Results:
+<img width="677" height="157" alt="image" src="https://github.com/user-attachments/assets/d4756e24-485c-47e2-823c-493560412df1" />
+
