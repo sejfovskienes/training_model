@@ -8,4 +8,4 @@ wheels/
 
 # Virtual environments
 .venv
-gdelt_data
+gdelt_data_fetch
