@@ -9,4 +9,4 @@ wheels/
 # Virtual environments
 .venv
 .env
-gdelt_data_fetch
+gdelt_gold_filtered
