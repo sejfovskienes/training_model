@@ -69,3 +69,7 @@ Tried to combine both of lstm and random forest regression models to predict the
 Results:
 <img width="677" height="157" alt="image" src="https://github.com/user-attachments/assets/d4756e24-485c-47e2-823c-493560412df1" />
 
+
+
+### Second Phase 
+Training model with sentiment analysis. See training_with_sentiments.
